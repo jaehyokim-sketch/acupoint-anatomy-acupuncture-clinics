@@ -1,27 +1,66 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>사총혈·천성십이혈 피어리뷰</title><style>
-:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5b6470;--line:#d9d5cc;--head:#efebe2;--accent:#8a3b12;--quote:#f3efe6;--code:#f1eee8}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16181b;--fg:#e6e3dd;--muted:#a3a9b1;--line:#3a3d42;--head:#24272b;--accent:#e0915f;--quote:#1f2226;--code:#1d2024}}
-:root[data-theme="dark"]{--bg:#16181b;--fg:#e6e3dd;--muted:#a3a9b1;--line:#3a3d42;--head:#24272b;--accent:#e0915f;--quote:#1f2226;--code:#1d2024}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 "Noto Sans KR","Malgun Gothic","Microsoft YaHei",system-ui,sans-serif}
-main{max-width:1100px;margin:0 auto;padding:32px 16px 64px}
-h1{font-size:1.7rem;line-height:1.35;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:.4em}
-h2{font-size:1.25rem;margin-top:2.4em;border-left:4px solid var(--accent);padding-left:.6em}
-h3{font-size:1.05rem;margin-top:1.6em}
-blockquote{margin:1em 0;padding:.6em 1em;background:var(--quote);border-left:3px solid var(--line);color:var(--muted)}
-table{border-collapse:collapse;width:100%;font-size:.88rem;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top}
-th{background:var(--head);white-space:nowrap}
-pre{background:var(--code);padding:12px;overflow-x:auto;font-size:.8rem;line-height:1.45;border-radius:4px}
-code{font-family:"D2Coding",Consolas,monospace;background:var(--code);padding:0 3px;border-radius:3px}
-pre code{padding:0}
-a{color:var(--accent)}
-hr{border:0;border-top:1px solid var(--line);margin:2em 0}
-</style></head><body><main><nav style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:10px 0;margin-bottom:8px;border-bottom:1px solid var(--line);font-size:.9rem"><a href="../../index.html">← 경혈 해부생리학 포털 홈으로 이동</a><span style="color:var(--muted)">Acupoint Anatomy &amp; Clinical Acupuncture</span></nav><h1>사총혈·천성십이혈 구성원리 논문 타당도 검증 (피어리뷰 보고서)</h1>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사총혈·천성십이혈 구성원리 논문 타당도 검증 (피어리뷰 보고서)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<style>
+:root {
+  --bg: #f7f8fa; --card: #ffffff; --text: #1d2433; --muted: #5b6577; --border: #dfe3ea;
+  --accent: #0b6e8a; --accent-soft: #e3f2f7; --warn: #a15c00; --warn-soft: #fff4e0;
+  --th: #eef2f6; --code: #f1f3f6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12151b; --card: #1a1f27; --text: #e4e8ee; --muted: #9aa5b5; --border: #2d3440;
+    --accent: #5cc3df; --accent-soft: #15303a; --warn: #f0b45a; --warn-soft: #33270f;
+    --th: #222935; --code: #222935;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12151b; --card: #1a1f27; --text: #e4e8ee; --muted: #9aa5b5; --border: #2d3440;
+  --accent: #5cc3df; --accent-soft: #15303a; --warn: #f0b45a; --warn-soft: #33270f;
+  --th: #222935; --code: #222935;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Noto Sans KR", system-ui, sans-serif; line-height: 1.7; font-size: 16px; }
+main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 80px; }
+article { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px clamp(16px, 4vw, 48px); }
+h1, h2, h3 { font-family: "Noto Serif KR", serif; line-height: 1.35; }
+h1 { font-size: 1.75rem; margin-top: 0; }
+h2 { font-size: 1.35rem; margin-top: 2.2em; padding-bottom: .3em; border-bottom: 2px solid var(--accent-soft); }
+h3 { font-size: 1.12rem; margin-top: 1.6em; color: var(--accent); }
+h4 { font-size: 1rem; margin-top: 1.4em; }
+a { color: var(--accent); }
+blockquote { margin: 1em 0; padding: .6em 1em; background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; color: var(--text); }
+.table-wrap { overflow-x: auto; margin: 1em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { border: 1px solid var(--border); padding: 6px 10px; vertical-align: top; }
+th { background: var(--th); text-align: left; }
+code { font-family: "JetBrains Mono", monospace; background: var(--code); padding: .1em .35em; border-radius: 4px; font-size: .88em; }
+pre { background: var(--code); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+pre.mermaid { background: var(--card); text-align: center; }
+figure.diagram { margin: 1.5em 0; text-align: center; overflow-x: auto; }
+figure.diagram img { max-width: 100%; height: auto; background: #ffffff; border: 1px solid var(--border); border-radius: 8px; padding: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); }
+figure.diagram-text img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; }
+.meta { color: var(--muted); font-size: .85rem; margin-top: 24px; }
+.katex-display { overflow-x: auto; overflow-y: hidden; }
+</style>
+</head>
+<body>
+<main>
+<article>
+<h1 id="_1">사총혈·천성십이혈 구성원리 논문 타당도 검증 (피어리뷰 보고서)</h1>
 <blockquote>
-<p><strong>대상 논문</strong>: 윤다은, 문희영, 류연희, 채윤병. 〈주요 경혈 구성원리 고찰: 사총혈과 천성십이혈을 중심으로〉. <em>대한한의학회지</em> 45(3):226-233, 2024. https://doi.org/10.13048/jkm.24052 (Review Article)<br />
-<strong>로컬 원문</strong>: <code>학습자료/실험 및 연구 논문/2024_대한한의학회지_윤다은_주요 경혈 구성원리 고찰 - 사총혈과 천성십이혈을 중심으로.pdf</code><br />
-<strong>검증 체계</strong>: 경혈 해부학적 실체 판명 로직 체계 v2.6을 적용함</p>
+<p><strong>프레임워크</strong>: v2.7 (2026-10-04 정제) · <strong>적용 범위</strong>: Rank 1~4 문헌 고증(필요 시 Rank 5) · <strong>ARI</strong>: 미산정(고증 보고서) · <strong>근거 데이터</strong>: <code>사총혈_천성십이혈_문헌고증_DB.xlsx</code></p>
+<p><strong>대상 논문</strong>: 윤다은, 문희영, 류연희, 채윤병. 〈주요 경혈 구성원리 고찰: 사총혈과 천성십이혈을 중심으로〉. <em>대한한의학회지</em> 45(3):226-233, 2024. https://doi.org/10.13048/jkm.24052 (Review Article)
+  <em>(v2.7 확인: doi.org·Crossref에서 제목 "Principle of major acupoints composition: focus on Four Command and Star Twelve points", 저자 Yoon·Moon·Ryu·Chae, 45(3) 일치. Crossref 메타데이터의 쪽은 235-242로 등록되어 있으나 로컬 PDF 인쇄면은 "J Korean Med. 2024;45(3):226-233"이므로 226-233을 유지. 본문의 p.227~230 표기도 인쇄면 기준)</em>
+<strong>로컬 원문</strong>: <code>G:/내 드라이브/학습자료/실험 및 연구 논문/2024_대한한의학회지_윤다은_주요 경혈 구성원리 고찰 - 사총혈과 천성십이혈을 중심으로.pdf</code>
+<strong>검증 체계</strong>: 경혈 해부학적 실체 판명 로직 체계 v2.6을 적용했고, 2026-10-04 v2.7 규칙(Layer B 등록부 ID 인용, 근거 강도 표기)으로 정제함</p>
 <ul>
 <li>Rank 1~3: 3대 원전 직접 대조, 원천 대 재인용 구분, 문헌 층차 정렬</li>
 <li>Rank 4: 노이즈·편향 점검</li>
@@ -29,9 +68,9 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 </ul>
 <p><strong>작성일</strong>: 2026-10-03</p>
 </blockquote>
-<hr />
-<h2>0. 종합 판정 요약</h2>
-<table>
+<hr>
+<h2 id="0">0. 종합 판정 요약</h2>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: left;">영역</th>
@@ -71,11 +110,11 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: left;">결론의 "가장 효과적인 것으로 추정"이라는 표현은 신중함. 그러나 4~6종 가부만으로 "주요 경혈 구성의 공통 원리"를 일반화했고, 임상 선혈에 도움이 된다는 주장에는 근거가 없음</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>한 줄 평가</strong>: 사총혈 계열 가부를 "부위별·원위·대표혈"이라는 총론적 선혈 틀로 정리한 점은 교육적으로 유용하다. 다만 이것은 <strong>가설을 제안한 수준</strong>이다. 1차 원천 대조, 연대 정렬, 반례 처리, 주치 유사성의 정량 검증이 빠져 있어 "공통 구성원리를 밝혔다(revealed)"는 결론의 강도는 근거를 넘어선다.</p>
-<hr />
-<h2>1. 논문 개요</h2>
-<table>
+<hr>
+<h2 id="1">1. 논문 개요</h2>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: left;">항목</th>
@@ -104,10 +143,10 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: left;">서술적 문헌 고찰(narrative review). 체계적 문헌 고찰이나 정량 분석이 아님</td>
 </tr>
 </tbody>
-</table>
-<hr />
-<h2>2. 원전 대조 스크리닝 (Rank 1·2)</h2>
-<table>
+</table></div>
+<hr>
+<h2 id="2-rank-12">2. 원전 대조 스크리닝 (Rank 1·2)</h2>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: center;">#</th>
@@ -178,10 +217,10 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: center;">이견 미언급 (소수설이나 각주 처리 권장)</td>
 </tr>
 </tbody>
-</table>
-<hr />
-<h2>3. 원천 대 재인용 및 연대 정렬 (Rank 3)</h2>
-<table>
+</table></div>
+<hr>
+<h2 id="3-rank-3">3. 원천 대 재인용 및 연대 정렬 (Rank 3)</h2>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: left;">연대</th>
@@ -246,12 +285,12 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: center;">재해석</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>연대 정렬 결과</strong>: 논문은 사총혈을 "단순 모형", 천성십이혈을 사총혈이 "확장된 버전"으로 설명한다(p.229). 그러나 현존 문헌의 순서는 <strong>천성십일혈(1329) → 사총혈(明初~1439)</strong>이다. 따라서 사총혈은 천성 계열을 <strong>압축·요약</strong>한 형태로 보는 편이 연대에 맞는다. 논문 자신도 3절에서 "족삼리와 내정은 비슷한 주치 작용을 가지니 족삼리로 대표"라는 압축 논리를 쓰고 있어, 이를 "확장"이라는 틀로 설명한 것과 내적으로 충돌한다.</p>
-<hr />
-<h2>4. 결과별 타당도 검증</h2>
-<h3>4.1 원리 ①: 질병 부위 → 관련 경맥의 경혈</h3>
-<table>
+<hr>
+<h2 id="4">4. 결과별 타당도 검증</h2>
+<h3 id="41-1">4.1 원리 ①: 질병 부위 → 관련 경맥의 경혈</h3>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: left;">가부</th>
@@ -333,14 +372,14 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: left;">천금십일혈은 대신 "후계–열결"을 짝지음</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <ul>
 <li><strong>판정</strong>: 혈 단위로 보면 원리 ①은 대체로 맞는다(13혈 중 12혈은 본경 유주로 설명 가능).</li>
 <li>그러나 <strong>"짝짓기" 수준의 설명은 6쌍 중 4쌍에만 맞는다.</strong></li>
 <li>본문(p.229)은 천금십일혈의 짝(위중–곤륜, 후계–열결)으로, Fig.1B는 천성십이혈의 짝(위중–승산, 곤륜–태충, 열결–통리)으로 설명한다. <strong>서로 다른 가부의 짝을 섞어 쓴 셈</strong>이다.</li>
 </ul>
-<h3>4.2 원리 ②: 주슬관절 이하 원위혈</h3>
-<table>
+<h3 id="42-2">4.2 원리 ②: 주슬관절 이하 원위혈</h3>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: left;">혈</th>
@@ -365,13 +404,13 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: center;"><strong>아니오</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <ul>
 <li><strong>판정</strong>: 환도는 천성십일혈·천성십이혈·천금십일혈 세 가부에 <strong>모두</strong> 들어 있다. 그런데도 논문은 "주슬관절 이하 원위부에서 선정하였다"를 공통 원리로 제시하면서 <strong>환도 반례를 다루지 않았다.</strong></li>
 <li>원리 ②는 "대부분(12/13)"이라는 경향으로 낮추어 서술해야 한다.</li>
 <li>또한 《医学入门》의 "360 → 66 → 8" 총결론과 사총혈을 연결한 부분은 유비(類比)이며, 구성 근거로서 입증된 것은 아니다.</li>
 </ul>
-<h3>4.3 원리 ③: 주치 유사성 기반 대표혈</h3>
+<h3 id="43-3">4.3 원리 ③: 주치 유사성 기반 대표혈</h3>
 <ul>
 <li>논문은 족양명경 원위혈(ST36·37·39·41·43·44·45)과 수양명경 원위혈(LI1~5, LI11) 가운데 "대표성이 있는 것"을 골랐다고 서술한다.</li>
 <li>그러나 <strong>대표성을 판정하는 기준·자료·분석이 제시되지 않았다.</strong></li>
@@ -379,10 +418,13 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <li>근거로 든 예시에도 <strong>코드 오류(대릉 PC6 → PC7)</strong>가 있다.</li>
 <li><strong>판정</strong>: 검증되지 않은 가설이다. 저자들 스스로 "가장 효과적인 경혈인지 향후 실험적으로 검증이 필요"하다고 밝혔다.</li>
 </ul>
-<hr />
-<h2>5. 해부·신경분절 검증 (Rank 5·6: Layer A·B)</h2>
-<p>논문은 "원위 취혈"을 하나의 원리로 묶었다. 신경분절로 보면 사총혈 4혈의 작용 경로는 <strong>분절성</strong>과 <strong>비분절성(상위중추 경유)</strong>으로 갈린다. 아래 표에서 신경 지배는 김재효 데이터셋과 공통교재 데이터셋을 따랐고, 척수 분절은 일반 해부학 지식(Layer B)이다.</p>
-<table>
+<hr>
+<h2 id="5-rank-56-layer-ab-ari">5. 해부·신경분절 검증 (Rank 5·6: Layer A·B) — 해부 실체 가설(ARI 미산정)</h2>
+<blockquote>
+<p><strong>v2.7 표기</strong>: 이 절의 "관계" 판정(분절/비분절)은 B-Check 6항목 채점과 Rank 7 ARI 채점을 거치지 않은 <strong>해부 실체 가설</strong>이다. 논문 평가의 보조 논거로만 쓴다.</p>
+</blockquote>
+<p>논문은 "원위 취혈"을 하나의 원리로 묶었다. 신경분절로 보면 사총혈 4혈의 작용 경로는 <strong>분절성</strong>과 <strong>비분절성(상위중추 경유)</strong>으로 갈린다. 아래 표에서 신경 지배는 김재효 데이터셋과 공통교재 데이터셋(B2-09)을 따랐고, 척수 분절은 규범 해부서(B1-01 Gray's 42판, B1-03 Moore 8판의 피절·근절)를 기준으로 했다.</p>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: left;">혈</th>
@@ -423,7 +465,7 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: left;">등쪽손가락신경(노신경), 자신경 깊은가지</td>
 <td style="text-align: center;">C6-T1</td>
 <td style="text-align: left;">얼굴·입 (삼차신경 V2·V3)</td>
-<td style="text-align: left;"><strong>비분절</strong> (가설: 손–얼굴 피질 체성지도의 인접성, DNIC)</td>
+<td style="text-align: left;"><strong>비분절</strong> (가설: 손–얼굴 피질 체성지도의 인접성, DNIC — B3-08, 마취 쥐, 비특이 진통이라 혈위 특이성 근거로는 쓰지 않음)</td>
 <td style="text-align: center;">71편</td>
 </tr>
 <tr>
@@ -435,21 +477,23 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: center;">8편</td>
 </tr>
 </tbody>
-</table>
-<p><strong>Layer A (확인된 실측 근거)</strong><br />
-- ST36: Liu S <em>et al.</em> (2021). 생쥐 뒷다리 ST36 저강도 전침이 PROKR2 감각신경을 거쳐 미주–부신 축을 구동했다. 복부 ST25에서는 같은 효과가 나지 않았다. <em>Nature</em> 598:641-645. PMID 34646018, <a href="https://doi.org/10.1038/s41586-021-04001-4">doi:10.1038/s41586-021-04001-4</a>. (PubMed 확인)<br />
-  - 이 결과는 "원위혈이 근위혈과 다른 경로를 구동한다"는 논문의 원리 ②에 <strong>부분적인 생리학적 근거</strong>가 된다.<br />
-  - 다만 동물 실험이고, 대상은 족삼리 1혈과 항염증 표현형에 한정된다.<br />
-- 체성-자율신경 반사의 부위 특이성: Sato A, Sato Y, Schmidt RF (1997). <em>Rev Physiol Biochem Pharmacol</em> 130:1-328. PMID 9019119. (PubMed 확인)<br />
-  - ※ 마스터 DB의 ST36 항목은 이 문헌을 "<em>Physiol Rev</em> 1997, PMID 9234958"로 기재하고 있으나, 해당 PMID는 바이러스학 논문이다. <strong>DB 정정이 필요하다</strong> (DB는 수정하지 않음).<br />
-- LU7·SI3·ST44는 역색인 논문이 5편 이하라 근거가 희박하다.</p>
-<p><strong>종합</strong><br />
-- 논문의 "원위 취혈"은 해부학적으로 <strong>분절성 근거(위중·열결)</strong>와 <strong>비분절성 근거(족삼리·합곡)</strong>가 섞인 범주다.<br />
-- 따라서 "원위"라는 위치 기준만으로는 <strong>작용 기전을 하나로 설명할 수 없다.</strong><br />
+</table></div>
+<p><em>역색인 편수는 2026-10-03 마스터 DB 기준이다. 2026-10-04 통합 DB v3.0 재동기화 후 값은 ST36 148, BL40 30, LU7 6, LI4 77, GB30 9편이며, 상대 순서는 같다.</em></p>
+<p><strong>Layer A·B 대조 (생의학 근거, 등록부 ID 인용)</strong>
+- ST36: <strong>B3-17</strong> (Liu S <em>et al.</em>, <em>Nature</em> 2021;598:641-645, PMID 34646018, <a href="https://doi.org/10.1038/s41586-021-04001-4">doi:10.1038/s41586-021-04001-4</a>; 2026-10-04 PubMed esummary로 제목·DOI 재확인, 마스터 DB papers.id 317과 일치). 생쥐 뒷다리 ST36 저강도 전침이 PROKR2 감각신경을 거쳐 미주–부신 축을 구동했다. 복부 ST25에서는 같은 효과가 나지 않았다(선행 체성 지형 연구 <strong>B3-16</strong>).
+  - <strong>적용 범위</strong>: 마우스 전침(등록부 B3-17 범위), 검증 경혈 ST36(사지 심부 근막 PROKR2 섬유), 표적은 전신 염증 표현형. 다른 사총혈(BL40·LU7·LI4)에는 등록부 규칙상 '유추(1점)'를 넘지 않는다.
+  - 이 결과는 "원위혈이 근위혈과 다른 경로를 구동한다"는 논문의 원리 ②에 <strong>부분적인 생리학적 근거</strong>가 된다.
+  - 다만 동물 실험이고, 대상은 족삼리 1혈과 항염증 표현형에 한정된다. 인체 전환(B4)과 혈위 특이성 논쟁(B4-05, 가침 대비 효과 차이가 작다는 B4-04)은 검토하지 않았다.
+- 체성-자율신경 반사의 부위 특이성: <strong>B3-05</strong> (Sato A, Sato Y, Schmidt RF. <em>Rev Physiol Biochem Pharmacol</em> 1997;130:1-328, PMID 9019119; 2026-10-04 PubMed esummary로 제목 재확인). <strong>적용 범위</strong>: 마취 쥐 중심, 자극 강도·부위 의존성. 사총혈 개별 혈을 검증한 연구가 아니므로 유추 수준이다.
+  - ※ 마스터 DB의 ST36 항목은 이 문헌을 "<em>Physiol Rev</em> 1997, PMID 9234958"로 기재하고 있으나, 해당 PMID는 바이러스학 논문이다(2026-10-04 PubMed esummary 재확인: "Characterization of a processive form of the vaccinia virus DNA polymerase", <em>Virology</em> 1997). <strong>DB 정정이 필요하다</strong> (DB는 수정하지 않음; 2026-10-04 시점 DB에 여전히 1건 남아 있음).
+- LU7·SI3·ST44는 역색인 논문이 5편 이하라 근거가 희박하다(v3.0 재동기화 후 LU7 6, SI3 5, ST44 4편으로 여전히 소수).</p>
+<p><strong>종합</strong>
+- 논문의 "원위 취혈"은 해부학적으로 <strong>분절성 근거(위중·열결)</strong>와 <strong>비분절성 근거(족삼리·합곡)</strong>가 섞인 범주다.
+- 따라서 "원위"라는 위치 기준만으로는 <strong>작용 기전을 하나로 설명할 수 없다.</strong>
 - 논문의 2개 원리를 통합 원리로 내세우려면 이 이질성을 언급해야 한다. 이것이 논문 범위 밖의 요구라는 점은 인정한다.</p>
-<hr />
-<h2>6. 결론 타당도</h2>
-<table>
+<hr>
+<h2 id="6">6. 결론 타당도</h2>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: left;">결론 문장</th>
@@ -481,13 +525,13 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <tr>
 <td style="text-align: left;">사총혈·천성십이혈은 "총론적 접근", 질환별 혈은 "각론적 접근"</td>
 <td style="text-align: center;">중간~높음</td>
-<td style="text-align: left;">개념 구분으로 유용하며, 참고문헌 16(Kye &amp; Kim 2020)과도 정합</td>
+<td style="text-align: left;">개념 구분으로 유용하며, 참고문헌 16(Kye &amp; Kim 2020)과 같은 방향의 구분이다(참고문헌 16 원문은 대조하지 않음 — 작성 시 판단)</td>
 </tr>
 </tbody>
-</table>
-<hr />
-<h2>7. 오류·정정 목록</h2>
-<table>
+</table></div>
+<hr>
+<h2 id="7">7. 오류·정정 목록</h2>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th style="text-align: center;">#</th>
@@ -546,9 +590,9 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <td style="text-align: left;">검토 대상 가부의 선정 기준, 판본, 배제 사유를 명시해야 함</td>
 </tr>
 </tbody>
-</table>
-<hr />
-<h2>8. 보완 제언</h2>
+</table></div>
+<hr>
+<h2 id="8">8. 보완 제언</h2>
 <ol>
 <li><strong>1차 연원 추가</strong>: 《灵枢·终始》와 《小品方》의 원위 상하 대응 원칙을 원리 ②의 기원으로 제시해야 한다(《证治通鉴》 按語가 이미 둘을 연결함).</li>
 <li><strong>가부 표본 확대</strong>: 《通玄指要赋》, 《肘后歌》, 《杂病穴法歌》 등 부위별 대표혈 가부를 함께 표로 만들어, 원리 ①·②가 얼마나 일관되게 나타나는지 정량화해야 한다(예: 원위혈 비율, 같은 경맥 비율).</li>
@@ -556,8 +600,147 @@ hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 <li><strong>반례 처리</strong>: 환도와 다른 경맥 짝(태충–곤륜, 통리–열결)을 별도로 논의해야 한다. 예컨대 천성 계열이 하지 비증·운동 장애를 독립 영역으로 다룬다는 해석이 가능하다.</li>
 <li><strong>기전 층위 구분</strong>: 원위 취혈을 분절성(위중·열결)과 비분절성(족삼리·합곡)으로 나누어 기술하면 서양의학적 "주요 경혈" 논의와의 비교가 정밀해진다.</li>
 </ol>
-<hr />
-<p><em>근거 파일</em><br />
-- 원전 chunks: <code>01_도서_번역_및_원전/中国针灸证治通鉴/chunks_refined/中国针灸证治通鉴_81-160.md</code>(L2626-2632), <code>_161-240.md</code>(L158), <code>_481-543.md</code>(인용서목) / <code>中国针灸穴位通鉴/chunks_refined/(上卷)_321-400.md</code>, <code>_481-560.md</code>, <code>_801-880.md</code>, <code>_1041-1120.md</code> / <code>针灸腧穴通考/chunks_refined/(上)_1-80.md</code>(L2100-2125)<br />
-- 마스터 데이터셋: <code>02_Master_Datasets/김재효 수업_경혈_해부구조_데이터셋.xlsx</code>, <code>경혈학공통교재 경혈_해부구조_데이터셋_refine.xlsx</code>, <code>경혈_생의학_신경반사_마스터DB.json</code><br />
-- 데이터북: <code>사총혈_천성십이혈_문헌고증_DB.xlsx</code> / 웹리포트: <code>사총혈_천성십이혈_구성원리_가설검증_및_피어리뷰_보고서.html</code></p></main></body></html>
+<hr>
+<p><em>근거 파일</em>
+- 원전 chunks: <code>01_도서_번역_및_원전/中国针灸证治通鉴/chunks_refined/中国针灸证治通鉴_81-160.md</code>(L2626-2632), <code>_161-240.md</code>(L158), <code>_481-543.md</code>(인용서목) / <code>中国针灸穴位通鉴/chunks_refined/(上卷)_321-400.md</code>, <code>_481-560.md</code>, <code>_801-880.md</code>, <code>_1041-1120.md</code> / <code>针灸腧穴通考/chunks_refined/(上)_1-80.md</code>(L2100-2125)
+- 마스터 데이터셋: <code>02_Master_Datasets/김재효 수업_경혈_해부구조_데이터셋.xlsx</code>, <code>경혈학공통교재 경혈_해부구조_데이터셋_refine.xlsx</code>, <code>경혈_생의학_신경반사_마스터DB.json</code>
+- 데이터북: <code>사총혈_천성십이혈_문헌고증_DB.xlsx</code> / 웹리포트: <code>사총혈_천성십이혈_구성원리_가설검증_및_피어리뷰_보고서.html</code></p>
+<h2 id="v27-2026-10-04">v2.7 정제 이력 (2026-10-04)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th style="text-align: left;">위치</th>
+<th style="text-align: left;">원래 표현</th>
+<th style="text-align: left;">바꾼 표현</th>
+<th style="text-align: left;">근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">머리말</td>
+<td style="text-align: left;">검증 체계 v2.6</td>
+<td style="text-align: left;">프레임워크 v2.7 정제 블록, ARI 미산정, 근거 데이터 xlsx 명시</td>
+<td style="text-align: left;">지침 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">머리말 대상 논문</td>
+<td style="text-align: left;">doi(무확인 표기)</td>
+<td style="text-align: left;">doi.org·Crossref 확인 결과, Crossref 쪽(235-242)과 인쇄면(226-233) 불일치 기록</td>
+<td style="text-align: left;">doi.org CSL, Crossref API, 로컬 PDF 인쇄면</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">머리말 로컬 원문</td>
+<td style="text-align: left;"><code>학습자료/…</code> (프로젝트 기준 상대경로, 실제로는 없음)</td>
+<td style="text-align: left;"><code>G:/내 드라이브/학습자료/…</code> 절대 경로</td>
+<td style="text-align: left;">파일 존재 확인</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">5절 제목·도입</td>
+<td style="text-align: left;">Layer A·B 검증(무표기), "일반 해부학 지식(Layer B)"</td>
+<td style="text-align: left;">"해부 실체 가설(ARI 미산정)", 분절 기준을 B1-01·B1-03, 교재를 B2-09로 인용</td>
+<td style="text-align: left;">지침 4, 등록부 B1·B2</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">5절 표 LI4</td>
+<td style="text-align: left;">"DNIC"</td>
+<td style="text-align: left;">B3-08 인용, 비특이 진통이므로 혈위 특이성 근거로 쓰지 않음</td>
+<td style="text-align: left;">등록부 B3-08 한계</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">5절 표 아래</td>
+<td style="text-align: left;">역색인 편수(날짜 없음)</td>
+<td style="text-align: left;">2026-10-03 기준 명시, v3.0 재동기화 값 병기</td>
+<td style="text-align: left;">마스터 DB <code>acupoint_inverted_index</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">5절 Layer A</td>
+<td style="text-align: left;">"Layer A (확인된 실측 근거)", Liu S et al. (2021)</td>
+<td style="text-align: left;">B3-17(+B3-16) 등록부 ID, 종·검증 경혈·표현형 범위, B4 미검토 명시</td>
+<td style="text-align: left;">등록부 적용 원칙 ①②</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">5절 Layer A</td>
+<td style="text-align: left;">Sato A, Sato Y, Schmidt RF (1997)</td>
+<td style="text-align: left;">B3-05 등록부 ID, 마취 쥐·유추 수준 명시</td>
+<td style="text-align: left;">등록부 B3-05</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">5절 DB 주</td>
+<td style="text-align: left;">PMID 9234958 바이러스학 논문</td>
+<td style="text-align: left;">PubMed 재확인 제목 병기, DB에 아직 남아 있음</td>
+<td style="text-align: left;">PubMed esummary</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">6절 표</td>
+<td style="text-align: left;">참고문헌 16과 "정합"</td>
+<td style="text-align: left;">"같은 방향의 구분(원문 미대조, 작성 시 판단)"</td>
+<td style="text-align: left;">지침 2</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>PMID·DOI 확인 결과 (5건, 2026-10-04)</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">표기</th>
+<th style="text-align: left;">확인 방법</th>
+<th style="text-align: left;">결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">doi:10.13048/jkm.24052</td>
+<td style="text-align: left;">doi.org CSL·Crossref</td>
+<td style="text-align: left;">존재, 제목·저자·권호 일치. 쪽은 Crossref 235-242 대 인쇄면 226-233(인쇄면 유지)</td>
+</tr>
+<tr>
+<td style="text-align: left;">PMID 34646018</td>
+<td style="text-align: left;">PubMed esummary</td>
+<td style="text-align: left;">존재, 제목 일치(Liu 2021 Nature)</td>
+</tr>
+<tr>
+<td style="text-align: left;">doi:10.1038/s41586-021-04001-4</td>
+<td style="text-align: left;">PubMed esummary articleids</td>
+<td style="text-align: left;">PMID 34646018의 DOI와 일치</td>
+</tr>
+<tr>
+<td style="text-align: left;">PMID 9019119</td>
+<td style="text-align: left;">PubMed esummary</td>
+<td style="text-align: left;">존재, 제목 일치(Sato·Sato·Schmidt 1997)</td>
+</tr>
+<tr>
+<td style="text-align: left;">PMID 9234958</td>
+<td style="text-align: left;">PubMed esummary</td>
+<td style="text-align: left;">존재하나 Sato 문헌이 아님(바이러스학). 본문은 이미 오류로 지적하고 있어 그 지적이 맞음을 확인</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>정량 수치 확인: "6쌍 중 4쌍", "13혈 중 12혈", "12/13(환도만 N)"은 같은 폴더 xlsx <code>08_Table1_구성검산</code>·<code>04_원리별검증</code> 시트와 일치한다.</li>
+<li>데이터 파일: xlsx에는 본 정제로 고친 과잉 주장 문구("정합")가 없어 수정하지 않았다. <code>05_해부신경분절</code> 시트의 LI4 "DNIC" 셀은 과잉 주장이 아니라 인용 표기 문제이므로 지침(과잉 주장 문구만 데이터에 반영)에 따라 그대로 두었다.</li>
+<li>남은 한계: 원리 ③의 정량 검증(주치 벡터 군집)은 여전히 제언 단계이며, 참고문헌 16(Kye &amp; Kim 2020)은 원문을 대조하지 않았다.</li>
+</ul>
+<p class="meta">생성: 2026-10-04 10:21 · 원본: 사총혈_천성십이혈_구성원리_가설검증_및_피어리뷰_보고서.md · build_report_html.py (Framework v2.7)</p>
+</article>
+</main>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "default" });
+</script>
+</body>
+</html>
